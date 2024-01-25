@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --black: #000;
+    --dark: #2A324B;
+    --blue: #58699D;
+    --light: #E1E5EE;
+    --white: #fff;
+
+    --font: "Monserrat", sans-serif;
+    --rootsize: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--light);
+    font-family: var(--font);
+    font-size: var(--rootsize);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 60rem;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-family: var(--font);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--dark);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3rem;
+}
+
+main h1 {
+    font-size: 1.3rem;
+}
+
+main p {
+    font-size: 0.9rem;
+    font-family: var(--font);
+    text-align: left;
+}
+
+main ul {
+    font-size: 0.9rem;
+}
+
+
+.active {
+    background-color: var(--white);
+    color: var(--black);
+}
+
