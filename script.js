@@ -13,7 +13,7 @@ function generateHTML(category) {
             ${resource.sources.map(source => `<li><a href="${source.url}">${source.title}</a></li>`).join('')}
         </ul>
         `);
-    document.getElementById("content").innerHTML = sourceHTML.join('');
+    document.getElementById("main").innerHTML = sourceHTML.join('');
 }
 
 const categories = ["HTML", "CSS", "JavaScript", "React", "Sanity and headless CMS"];
